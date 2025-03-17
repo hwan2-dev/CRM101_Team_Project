@@ -1,0 +1,119 @@
+<template>
+    <lightning-card title="뉴스" icon-name="standard:news">
+        <div class="slds-m-around_medium">
+
+            <template if:true={filter}>
+                <div class="filter-container">
+                    <lightning-layout horizontal-align="spread"
+                        vertical-align="center">
+                        <!-- 필터 입력 -->
+                        <lightning-layout-item size="9">
+                            <lightning-layout>
+                                <!-- 입점 상태 필터 -->
+                                <lightning-layout-item size="4">
+                                    <lightning-combobox
+                                        label="입점 상태"
+                                        options={statusOptions}
+                                        value={selectedStatus}
+                                        onchange={handleStatusChange}>
+                                    </lightning-combobox>
+                                </lightning-layout-item>
+                                
+                                <!-- 매장 선택 필터 -->
+                                <lightning-layout-item size="4">
+                                    <lightning-combobox
+                                        label="매장"
+                                        options={storeOptions}
+                                        value={selectedStore}
+                                        onchange={handleStoreSelection}>
+                                    </lightning-combobox>
+                                </lightning-layout-item>
+
+                                <lightning-layout-item size="4">
+                                    <lightning-combobox
+                                        label="검색 필터"
+                                        options={searchOptions}
+                                        value={selectedSearchFilter}
+                                        onchange={handleSearchFilterChange}>
+                                    </lightning-combobox>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-layout-item>
+
+                        <!-- 조회 버튼 -->
+                        <lightning-layout-item size="3"
+                            class="button-container">
+                            <lightning-button label="조회하기" variant="brand"
+                                onclick={handleFetchNews}></lightning-button>
+                        </lightning-layout-item>
+                    </lightning-layout>
+
+                    <!-- 선택된 매장 배지 -->
+                    <template if:true={selectedStores.length}>
+                        <div class="badge-container">
+                            <template for:each={selectedStores}
+                                for:item="store">
+                                <span key={store.value} class="badge-style">
+                                    {store.label}
+                                    <lightning-button-icon
+                                        icon-name="utility:close"
+                                        alternative-text="Remove"
+                                        class="remove-btn"
+                                        data-value={store.value}
+                                        variant="bare"
+                                        onclick={handleRemoveStore}>
+                                    </lightning-button-icon>
+
+                                </span>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </template>
+
+            <template if:true={isLoading}>
+                <lightning-spinner
+                    alternative-text="Loading"></lightning-spinner>
+            </template>
+
+            <template if:true={newsArticles}>
+                <div class="scroll-container">
+                    <template for:each={newsArticles} for:item="article">
+                        <div key={article.link}
+                            class="slds-box slds-m-around_small">
+                            <p>
+                                <strong>
+                                    <a href={article.link} target="_blank"
+                                        rel="noopener noreferrer">
+                                        {article.title}
+                                    </a>
+                                </strong>
+                            </p>
+                            <p>{article.description}</p>
+                            <!-- <p>
+                                <lightning-button
+                                    label="자세히 보기"
+                                    variant="brand-outline"
+                                    value={article.link}
+                                    onclick={handleNavigate}>
+                                </lightning-button>
+                            </p> -->
+                        </div>
+                    </template>
+                </div>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">뉴스를 불러오는 중 오류가 발생했습니다.</p>
+            </template>
+
+            <template if:true={isNull}>
+                <p class="slds-text-color_error">선택된 매장이 없습니다.</p>
+            </template>
+
+            <template if:true={isNewsEmpty}>
+                <p>선택된 매장의 뉴스를 찾을 수 없습니다.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
