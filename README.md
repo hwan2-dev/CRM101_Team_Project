@@ -1,18 +1,21 @@
-# Salesforce DX Project: Next Steps
+# CRM101_Team_Project 🚀
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+![Salesforce](https://img.shields.io/badge/Salesforce-00A1E0?style=flat&logo=Salesforce&logoColor=white)
+![Apex](https://img.shields.io/badge/Apex-009EDB?style=flat&logo=Salesforce&logoColor=white)
+![LWC](https://img.shields.io/badge/LWC-FF9900?style=flat&logo=Lightning&logoColor=white)
 
-## How Do You Plan to Deploy Your Changes?
+## 📌 프로젝트 개요
+**CRM101 팀 프로젝트**는 Salesforce DX를 활용한 CRM 구축 프로젝트입니다.  
+이 프로젝트는 고객 데이터를 관리하고, Salesforce의 다양한 기능을 최적화하여 **업무 효율성을 향상**시키는 것을 목표로 합니다.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## 🛠 기술 스택 (Tech Stack)
+| 영역       | 사용 기술 |
+|------------|--------------------------------|
+| **Edition** | Salesforce Developer Edition |
+| **Clouds** | Sales Cloud, Experience Cloud, Service Cloud|
+| **Development** | Apex, LWC, Flow, SOQL |
+| **Frontend** | HTML, CSS, JavaScript |
+| **IDE & CLI** | VS Code, Salesforce CLI |
+| **Collaboration** | Jira, Miro, Slack, Google Drive |
+| **API & Testing** | Postman |
+| **Dashboard & Reporting** | Tableau |
