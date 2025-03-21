@@ -48,17 +48,17 @@ CRM101_Team_Project/
 │-- force-app/
 │   ├── main/
 │   │   ├── default/
-│   │   │   ├── classes/      # Apex Classes (Controller, Service, Utility)
-│   │   │   ├── lwc/          # Lightning Web Components
-│   │   │   ├── objects/      # Salesforce Objects & Metadata
-│   │   │   ├── layouts/      # Page Layouts
-│-- config/
-│   ├── project-scratch-def.json
-│-- scripts/
-│   ├── deploy.sh
-│-- README.md
-│-- sfdx-project.json
-```
+│   │   │   ├── classes/
+│   │   │   │   ├── controllers/
+│   │   │   │   ├── repositories/
+│   │   │   │   ├── services/
+│   │   │   │   ├── triggers/
+│   │   │   │   ├── webservices/
+│   │   │   │   │   ├── rest/
+│   │   │   ├── lwc/
+│   │   │   │   ├── neswList/
+│   │   │   │   ├── parterDashboard/
+│   │   │   ├── triggers/
 
 ---
 
