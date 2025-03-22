@@ -66,8 +66,6 @@ CRM101_Team_Project/
 - **LWC 컴포넌트 개발** : Naver News API를 연동하여, 담당 매장의 실시간 뉴스 정보를 조회할 수 있는 컴포넌트 구현
 - **Apex 트리거 개발** : 리드(Lead) 생성 시, 관련 브랜드의 최신 기사를 자동으로 조회하여 커스텀 오브젝트에 저장 (리드와 Lookup 관계 설정)
 - **Flow 자동화** : 정기MD평가 레코드 생성 시, 자동 알림 및 이메일 발송 프로세스 구축
-- **Tableau Public을 활용한 매출 데이터 시각화** : 외부 DB 연동 및 실시간 데이터 처리 환경은 아니었지만,
-Tableau Public을 활용하여 매출 데이터를 시각화하고,
-이를 Experience Cloud 포털에 임베딩하여 사용자 경험을 모의 구현함 
+- - **Tableau Public을 활용한 매출 데이터 시각화** : 외부 DB 연동 및 실시간 처리는 어려웠지만, Tableau Public을 활용해 브랜드별 매출 데이터를 시각화하고, 이를 LWC에서 임베딩하여 Experience Cloud 포털에 노출되도록 구현
 
 ---
