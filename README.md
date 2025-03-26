@@ -61,6 +61,11 @@ CRM101_Team_Project/
 ```
 ---
 
+## 📐 ERD
+![THE MIRAE_ERD (간략화)](https://github.com/user-attachments/assets/9172eb5b-7b90-4d4b-8738-99b74ea91f9d)
+
+---
+
 ## 📌 My Contribution  
 ### 🔹 개발 범위  
 - **LWC 컴포넌트 개발** : Naver News API를 연동하여, 담당 매장의 실시간 뉴스 정보를 조회할 수 있는 컴포넌트 구현
