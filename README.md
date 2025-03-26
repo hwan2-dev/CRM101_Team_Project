@@ -74,3 +74,5 @@ CRM101_Team_Project/
 - - **Tableau Public을 활용한 매출 데이터 시각화** : 외부 DB 연동 및 실시간 처리는 어려웠지만, Tableau Public을 활용해 브랜드별 매출 데이터를 시각화하고, 이를 LWC에서 임베딩하여 Experience Cloud 포털에 노출되도록 구현
 
 ---
+
+
