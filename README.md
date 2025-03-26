@@ -5,7 +5,7 @@
 ![LWC](https://img.shields.io/badge/LWC-FF9900?style=flat&logo=Lightning&logoColor=white)
 
 ## 📌 프로젝트 개요  
-CRM101 팀 프로젝트는 **Salesforce CRM을 활용하여 팝업스토어 운영을 최적화**하는 프로젝트입니다.  
+**Salesforce CRM을 활용하여 팝업스토어 운영을 최적화**하는 프로젝트입니다.  
 가상의 기업 "더미래"는 매출 1위 백화점을 목표로 하며, 이를 위해 **팝업스토어 유치, 브랜드 관리, 장기입점 평가, 매출 분석을 효율적으로 수행**해야 합니다.  
 
 이 프로젝트에서는 Salesforce Sales Cloud, Service Cloud, Experience Cloud를 활용하여  
