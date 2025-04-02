@@ -1,6 +1,5 @@
 public with sharing class OpportunityService {
     
-    // 창환
     public static List<Map<String, String>> getEnterOrNotValues() {
         List<Map<String, String>> options = new List<Map<String, String>>();
         
@@ -23,7 +22,6 @@ public with sharing class OpportunityService {
         return options;
     }
     
-    //
     @AuraEnabled(cacheable=true)
     public static List<Opportunity> getActiveOpportunities(Date selectedDate) {
         try {
